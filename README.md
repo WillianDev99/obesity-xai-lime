@@ -1,8 +1,5 @@
-# Explainable Artificial Intelligence for Obesity Level Estimation: A LIME-based Interpretation of Machine Learning Models
+# EXPLAINABLE ARTIFICIAL INTELLIGENCE APPLIED TO ESTIMATE OBESITY LEVELS
 
-<p align="center">
-This repository contains code and experiments related to the use of machine learning models to estimate obesity levels and interpret their predictions using the LIME method.
-</p>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -18,18 +15,21 @@ This repository contains code and experiments related to the use of machine lear
 ## 📋 Requirements
 
 * Google Colab
-* Python 3.x
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* scikit-learn
-* imbalanced-learn
-* lime
+* Biblioteca Python pandas
+* Biblioteca Python numpy
+* Biblioteca Python matplotlib.pyplot
+* Biblioteca Python seaborn
+* Biblioteca Python sklearn (Scikit-learn)
+* Biblioteca Python imblearn (imbalanced-learn)
+* Biblioteca Python lime
+
+## 🧾 Research Objective
+
+The main objective of this work is to explain how machine learning models identify different levels of obesity using the LIME interpretability technique. This contributes to increasing trust and transparency in AI systems applied in the medical domain.
 
 ## 📖 Dataset
 
-The dataset used in this project includes phenotypic and behavioral attributes such as height, weight, physical activity, eating habits, and other lifestyle factors. Each record is labeled with a class representing the obesity level of the individual (e.g., normal weight, overweight, obesity type I, II, or III). The dataset is balanced and publicly available for research purposes.
+The <a href="https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition"><strong>original dataset</strong></a> includes data for estimating obesity levels in individuals from Mexico, Peru, and Colombia, based on their eating habits and physical condition. The data contains 17 attributes and 2,111 records, labeled with the class variable NObesity (Obesity Level), which allows for classification using the values Underweight, Normal Weight, Level I Overweight, Level II Overweight, Type I Obesity, Type II Obesity, and Type III Obesity. Seventy-seven percent of the data was generated synthetically using the Weka tool and the SMOTE filter, and 23% of the data was collected directly from users through a web platform.
 
 ## 🧠 Machine Learning Models
 
@@ -41,29 +41,10 @@ The following machine learning models were trained and evaluated:
 * Support Vector Classifier (SVC)
 * Multi-Layer Perceptron (MLP)
 
-## 📊 Evaluation and Methodology
-
-* Data preprocessing included normalization, encoding, and class balancing.
-* Models were evaluated using metrics such as Accuracy, Precision, Recall, F1-Score, and AUC-ROC.
-* A stratified split was applied with 80% for training and 20% for testing.
-* The LIME (Local Interpretable Model-Agnostic Explanations) method was applied to explain and interpret the predictions of the models.
-
-## 🧾 Research Objective
-
-The main objective of this work is to explain how machine learning models identify different levels of obesity using the LIME interpretability technique. This contributes to increasing trust and transparency in AI systems applied in the medical domain.
 
 ## 👏 Contributing
 
-If you find any issues or have suggestions to improve the code or methodology, feel free to contribute or open an issue.
+If you find any issues or have suggestions to improve the code, feel free to contribute or open an issue.
 
 For questions or academic collaborations:  
-📧 [Willian de Oliveira Cardoso](mailto:seu-email@exemplo.com)
-
-## 📄 License
-
-This project is licensed under the MIT License or another appropriate license.
-
-## 📚 References
-
-* Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "Why Should I Trust You?": Explaining the Predictions of Any Classifier.
-* Papers on XAI in healthcare and obesity prediction (adicionar conforme necessidade).
+📧 [Willian de Oliveira Cardoso](mailto:willian.oliveira.cardoso07@aluno.ifce.edu.br)
